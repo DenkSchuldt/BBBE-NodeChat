@@ -16,7 +16,7 @@ html
       socket.on('updateusers', function(data){
         $('#users').empty();
         $.each(data, function(key, value){
-          $('#users').append('-> '+ key);
+          $('#users').append('<b>'+ key+'</b>');
         });
       });
       $(function(){
